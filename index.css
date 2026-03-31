@@ -1,0 +1,52 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/** TYPOGRAPHY **/
+
+i{
+    font-size: 2rem;
+    display: block;
+}
+
+.head-title{
+    font-size: 1rem;
+    margin: 0;
+    word-spacing: 0.1rem;
+    align-self: center;
+}
+
+.head-container{
+   
+    display: flex;
+
+}
+
+header{
+    padding: 1em 0.5em;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    align-self: center;
+    margin-right: 0.5em;
+    color: #090909;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 449px ){
+
+}
