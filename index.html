@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    
 </head>
 <body>
     <header >
@@ -25,11 +27,27 @@
             <a href="#">Home</a>
             <a href="#">About Me</a>
         </nav>
-        
-
-
-
     </header>
+        
+        <main>
+            <section class="intro">
+                <p id="date"></p>
+                <h2>My new journey as a bootcamp alumni</h2>
+                <p>After several months of learning in the Frontend Developer Career Path,
+                    I've made the big jump over to the Bootcamp to get expert code 
+                    reviews of my Solo Projects projects and meet like-minded peers.</p>
+                
+            </section>
+        </main>
+
+
+    <script>
+        const time = document.getElementById("date")
+        const date = new Date()
+        const formarttedDate = date.toLocaleDateString("en-US")
+        time.textContent = formarttedDate
+    </script>
+   
     
 </body>
 </html>

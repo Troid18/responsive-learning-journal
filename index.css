@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 
 body{
     margin: 0;
@@ -35,7 +38,9 @@ header{
 nav{
     display: flex;
     gap: 10px;
+    margin-left: auto;
 }
+
 
 a{
     text-decoration: none;
@@ -47,6 +52,37 @@ a{
     font-size: 0.8rem;
 }
 
-@media (min-width: 449px ){
+.intro{
+    width: 100%;
+    display: block;
+    background: url("./images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    min-height: 300px;
+    padding: 2rem;
+    border: 1px solid #00fff0;
+    
+}
+p{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+@media (min-width: 599px ){
+   
+
+    i{
+
+        font-size: 4rem;
+    }
+
+    .head-title, a{
+        font-size: 1.25rem;
+    }
+
+     
 
 }
