@@ -10,6 +10,10 @@ body{
 
 /** TYPOGRAPHY **/
 
+h1{
+    margin: 0;
+}
+
 i{
     font-size: 2rem;
     display: block;
@@ -22,10 +26,18 @@ i{
     align-self: center;
 }
 
-.head-container{
-   
-    display: flex;
+p{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 0;
+}
 
+/**LAYOUT**/
+
+.head-container{
+
+    display: flex;
 }
 
 header{
@@ -41,13 +53,12 @@ nav{
     margin-left: auto;
 }
 
-
 a{
     text-decoration: none;
     text-transform: uppercase;
     align-self: center;
+    color: #505050;
     margin-right: 0.5em;
-    color: #090909;
     font-weight: bold;
     font-size: 0.8rem;
 }
@@ -62,13 +73,29 @@ a{
     color: #fff;
     min-height: 300px;
     padding: 2rem;
-    border: 1px solid #00fff0;
     
 }
-p{
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: 700;
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1em;
+    row-gap: 10px;
+}
+
+.images{
+    box-shadow: 0 0 5px black;
+    margin: 0;
+    width: 50%;
+}
+
+.data{
+    text-transform: none;
+    color: #505050;
+    display: block;
+    font-weight: 100;
+    padding: 1em;
+    box-shadow: 0 0 6px ;
 }
 
 @media (min-width: 599px ){
@@ -81,6 +108,10 @@ p{
 
     .head-title, a{
         font-size: 1.25rem;
+    }
+
+    .content{
+        grid-template-columns: repeat(2,1fr);
     }
 
      

@@ -1,4 +1,4 @@
-const journalData = [
+export const journalData = [
     {
         image: "./images/blackjack.png",
         title: "Blackjack",
