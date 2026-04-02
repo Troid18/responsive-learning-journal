@@ -38,9 +38,14 @@ p{
 .head-container{
 
     display: flex;
+   
 }
 
 header{
+    position: sticky;
+    background: #fff;
+    top: 0;
+    z-index: 100;
     padding: 1em 0.5em;
     display: flex;
     gap: 10px;
@@ -78,6 +83,7 @@ a{
 
 .content{
     display: grid;
+    padding: 1em;
     grid-template-columns: 1fr;
     margin-top: 1em;
     row-gap: 10px;
@@ -86,6 +92,7 @@ a{
 .images{
     box-shadow: 0 0 5px black;
     margin: 0;
+    object-fit: cover;
     width: 50%;
 }
 
@@ -96,6 +103,7 @@ a{
     font-weight: 100;
     padding: 1em;
     box-shadow: 0 0 6px ;
+    border-radius: 5px;
 }
 
 @media (min-width: 599px ){
