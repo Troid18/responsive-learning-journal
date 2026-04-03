@@ -2,6 +2,8 @@ import { journalData } from "./data.js"
 
 const time = document.getElementById("date")
 const contentHtml = document.getElementById("content")
+const aboutHtml = document.getElementById("about")
+
 
 function getRealTime(){
     const date = new Date()
@@ -33,3 +35,10 @@ function renderHtml(){
 }
 
 renderHtml()
+
+aboutHtml.addEventListener("mouseover", renderAboutHtrml())
+
+function renderAboutHtrml(event){
+
+    console.log("Hi")
+}
