@@ -2,8 +2,10 @@ import { journalData } from "./data.js"
 
 const time = document.getElementById("date")
 const contentHtml = document.getElementById("content")
-const aboutHtml = document.getElementById("about")
-
+const aboutTag = document.getElementById("about")
+const AboutHtml = document.getElementById("about-intro")
+const introHtml = document.getElementById("intro")
+const homeHTML = document.getElementById("home")
 
 function getRealTime(){
     const date = new Date()
@@ -36,7 +38,17 @@ function renderHtml(){
 
 renderHtml()
 
-aboutHtml.onclick = function renderAboutHtrml(event){
-    console.log(event.target.id)
-    console.log("hi")
+aboutTag.onclick = function renderAboutHtrml(){
+    
+   introHtml.style.display = "none"
+   AboutHtml.innerHTML = `
+        <div id="about-container">
+            <img src="./images/background.png" id="about-image">>
+            <div id="about-information">
+            </div>
+        </div>
+    
+   
+   `
+
 }
