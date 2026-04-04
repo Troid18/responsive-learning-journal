@@ -36,9 +36,7 @@ function renderHtml(){
 
 renderHtml()
 
-aboutHtml.addEventListener("mouseover", renderAboutHtrml())
-
-function renderAboutHtrml(event){
-
-    console.log("Hi")
+aboutHtml.onclick = function renderAboutHtrml(event){
+    console.log(event.target.id)
+    console.log("hi")
 }
