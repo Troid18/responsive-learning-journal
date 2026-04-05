@@ -5,13 +5,13 @@ const contentHtml = document.getElementById("content")
 const aboutTag = document.getElementById("about")
 const AboutHtml = document.getElementById("about-intro")
 const introHtml = document.getElementById("intro")
-const homeHTML = document.getElementById("home")
+const homeTag = document.getElementById("home")
 
 function getRealTime(){
     const date = new Date()
-    const formarttedDate = date.toLocaleDateString("en-US")
+    const formattedDate = date.toLocaleDateString("en-US")
     
-    return formarttedDate
+    return formattedDate
 }
 
 
@@ -38,17 +38,24 @@ function renderHtml(){
 
 renderHtml()
 
-aboutTag.onclick = function renderAboutHtrml(){
+aboutTag.onclick = function renderAboutHtml(){
     
    introHtml.style.display = "none"
    AboutHtml.innerHTML = `
         <div id="about-container">
-            <img src="./images/background.png" id="about-image">>
+            <img src="./images/about.jpg" id="about-image">
             <div id="about-information">
+                <h1> Hi there! My name is <span>Musa</span> and welcome to my learning journal. </h1>
+                <p> I'm a software engineer graduate and now pursuing web development(frontend). I'm currently working on upskilling my frontend skills using react and javascript. I have build complex projects on my learning journey that i would like for you to check out. </p>
             </div>
         </div>
     
    
    `
 
+}
+
+homeTag.onclick = function renderHomeHtml(){
+    AboutHtml.innerHTML = ""
+    introHtml.style.display = "block"
 }

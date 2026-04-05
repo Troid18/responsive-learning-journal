@@ -33,6 +33,12 @@ p{
     margin: 0;
 }
 
+#about-information p{
+    line-height: 2;
+    margin-top: 1em;
+
+}
+
 /**LAYOUT**/
 
 .head-container{
@@ -106,6 +112,25 @@ a{
     border-radius: 5px;
 }
 
+#about-image{
+  
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+span{
+    color: blue;
+    font-weight: bold;
+}
+
+#about-information{
+    
+    padding: 1em;
+}
+
 @media (min-width: 599px ){
    
 
@@ -120,6 +145,17 @@ a{
 
     .content{
         grid-template-columns: repeat(2,1fr);
+    }
+
+    #about-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    #about-information{
+    
+        align-self: center;
     }
 
      
