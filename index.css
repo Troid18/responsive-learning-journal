@@ -10,7 +10,7 @@ body{
 
 /** TYPOGRAPHY **/
 
-h1{
+h1,h2,h3{
     margin: 0;
 }
 
@@ -131,9 +131,24 @@ span{
     padding: 1em;
 }
 
+#outro{
+    background: #202020;
+    padding: 3em 1em;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#outro h3{
+    color: #D7D7D7;
+}
+
+#outro h2{
+    color: #ECECEC;
+}
+
 @media (min-width: 599px ){
    
-
     i{
 
         font-size: 4rem;
@@ -157,7 +172,4 @@ span{
     
         align-self: center;
     }
-
-     
-
 }
