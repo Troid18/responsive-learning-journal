@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body{
+html,body{
     margin: 0;
     padding: 0;
     font-family: "Source Sans 3", sans-serif;
@@ -147,6 +147,8 @@ span{
     color: #ECECEC;
 }
 
+
+
 @media (min-width: 599px ){
    
     i{
@@ -159,7 +161,7 @@ span{
     }
 
     .content{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2,minmax(100px, 1fr));
     }
 
     #about-container{
@@ -172,4 +174,44 @@ span{
     
         align-self: center;
     }
+}
+
+@media (min-width:924px){
+    .content{
+        grid-template: repeat(4, minmax(100px, 1fr));
+        grid-template-areas: 
+                "jack jack pass pass"
+                "jack jack conv conv"
+                "tab tab clon clon"
+                "tab tab rest rest"
+        ;
+    }
+
+        /***
+        Grid Area
+    **/
+
+    .password{
+        grid-area: pass;
+    }
+
+    .blackjack{
+        grid-area: jack;
+
+    }
+
+    .conveter{
+        grid-area: conv;
+    }
+
+    .tab{
+        grid-area: tab;
+    }
+    .clone{
+        grid-area: clon;
+    }
+    .resturant{
+        grid-area: rest;
+    }
+
 }

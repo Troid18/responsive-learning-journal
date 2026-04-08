@@ -21,7 +21,7 @@ function renderHtml(){
     let renderData = ""
     journalData.forEach(data => {
         renderData += `
-        <a href="${data.link}" aria-label="Visit link to my ${data.title} project" class="data" target="blank">
+        <a href="${data.link}" aria-label="Visit link to my ${data.title} project" class="data ${data.id}" target="blank">
             <div>
                 <img src=${data.image} alt="A picture of ${data.title}" class="images">
                 <p>${getRealTime()}</p>
