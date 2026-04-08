@@ -44,6 +44,8 @@ p{
 .head-container{
 
     display: flex;
+    height: 50%;
+    
    
 }
 
@@ -92,7 +94,7 @@ a{
     padding: 1em;
     grid-template-columns: 1fr;
     margin-top: 1em;
-    row-gap: 10px;
+    gap: 10px;
 }
 
 .images{
@@ -135,6 +137,7 @@ span{
     background: #202020;
     padding: 3em 1em;
     width: 100%;
+    margin: 0;
     text-align: center;
     color: #fff;
 }
@@ -178,40 +181,7 @@ span{
 
 @media (min-width:924px){
     .content{
-        grid-template: repeat(4, minmax(100px, 1fr));
-        grid-template-areas: 
-                "jack jack pass pass"
-                "jack jack conv conv"
-                "tab tab clon clon"
-                "tab tab rest rest"
-        ;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
-
-        /***
-        Grid Area
-    **/
-
-    .password{
-        grid-area: pass;
-    }
-
-    .blackjack{
-        grid-area: jack;
-
-    }
-
-    .conveter{
-        grid-area: conv;
-    }
-
-    .tab{
-        grid-area: tab;
-    }
-    .clone{
-        grid-area: clon;
-    }
-    .resturant{
-        grid-area: rest;
-    }
-
 }
