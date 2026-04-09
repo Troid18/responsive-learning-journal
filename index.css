@@ -133,6 +133,12 @@ span{
     padding: 1em;
 }
 
+#about-container{
+        background: #202020;
+        color: #D7D7D7;
+        box-shadow: 0 0 5px blue;
+
+    }
 #outro{
     background: #202020;
     padding: 3em 1em;
@@ -183,5 +189,34 @@ span{
     .content{
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+    }
+
+    .intro{
+        background: #202020;
+        border: 1px solid;
+
+    }
+
+    .intro div{
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 3em;
+        min-width: 600px;
+    }
+
+    #about-image{
+        width: 20%;
+        
+    }
+
+    #about-information p{
+        width: 50%;
+    }
+
+    #about-container{
+        background: #202020;
+        color: #D7D7D7;
+        box-shadow: 0 0 5px #505050;
+
     }
 }
